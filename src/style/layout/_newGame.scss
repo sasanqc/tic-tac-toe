@@ -1,0 +1,75 @@
+@use "../abstracts/" as *;
+.newGame {
+  width: rem(514);
+  text-align: center;
+  padding: rem(24);
+  .heading--xs {
+    margin-bottom: rem(24);
+  }
+
+  &__icons {
+    margin-bottom: rem(40);
+    display: flex;
+    justify-content: center;
+    gap: rem(9);
+  }
+  &__pickPlayer {
+    padding: rem(24);
+    border-bottom-style: solid;
+    border-radius: rem(15);
+    border-bottom-width: rem(8);
+    border-bottom-style: solid;
+    border-radius: rem(15);
+    border-bottom-width: rem(8);
+    background-color: var(--clr-dark-1);
+    border-bottom-color: var(--clr-dark-3);
+    margin-bottom: rem(40);
+  }
+  &__selectBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: rem(8);
+    background-color: var(--clr-dark-2);
+    border-radius: rem(10);
+    margin-bottom: rem(18);
+  }
+  &__selectBtn {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: inherit;
+    flex: 1;
+    transition: background-color 0.25s ease;
+    padding: rem(12) 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background-color: var(--clr-dark-1);
+    }
+    &--active {
+      background-color: var(--clr-light-2);
+      &:hover {
+        background-color: var(--clr-light-2);
+      }
+    }
+  }
+  .wrapper--m {
+    margin-bottom: rem(40);
+  }
+  .body--light-2 {
+    margin-bottom: (6);
+    opacity: 0.5;
+  }
+  &__startBtns {
+    display: flex;
+    flex-direction: column;
+
+    gap: rem(20);
+  }
+}

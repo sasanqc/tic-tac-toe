@@ -1,0 +1,63 @@
+@use "../abstracts/" as *;
+[class^="btn--"],
+[class*=" btn--"] {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom-style: solid;
+  transition: background-color 0.25s ease;
+}
+
+.btn {
+  //theme
+  &--primary {
+    background-color: var(--clr-primary-2);
+    border-bottom-color: var(--clr-primary-3);
+    &:hover {
+      background-color: var(--clr-primary-1);
+    }
+  }
+
+  &--secondary {
+    background-color: var(--clr-secondary-2);
+    border-bottom-color: var(--clr-secondary-3);
+    &:hover {
+      background-color: var(--clr-secondary-1);
+    }
+  }
+
+  &--light {
+    background-color: var(--clr-light-2);
+    border-bottom-color: var(--clr-light-3);
+    &:hover {
+      background-color: var(--clr-light-1);
+    }
+  }
+
+  //size
+  &--l {
+    font-size: rem(20);
+    line-height: rem(25);
+    letter-spacing: rem(1.25);
+    border-radius: rem(15);
+    border-bottom-width: rem(8);
+    padding: rem(16);
+    @include respond(phone) {
+      font-size: rem(16);
+      line-height: rem(20);
+      letter-spacing: rem(1);
+    }
+  }
+
+  &--s {
+    font-size: rem(16);
+    line-height: rem(20);
+    letter-spacing: rem(1);
+    padding: rem(16);
+    border-radius: rem(10);
+    border-bottom-width: rem(4);
+  }
+}

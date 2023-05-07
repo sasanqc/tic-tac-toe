@@ -1,0 +1,30 @@
+@use "../abstracts/" as *;
+.icon {
+  &--primary {
+    fill: var(--clr-primary-2);
+  }
+  &--secondary {
+    fill: var(--clr-secondary-2);
+  }
+  &--light {
+    fill: var(--clr-light-2);
+  }
+  &--dark {
+    fill: var(--clr-dark-2);
+  }
+  &--s {
+    @include size(rem(20));
+    @include respond(phone) {
+      @include size(rem(16));
+    }
+  }
+  &--m {
+    @include size(rem(32));
+  }
+  &--l {
+    @include size(rem(64));
+    @include respond(phone) {
+      @include size(rem(40));
+    }
+  }
+}

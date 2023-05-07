@@ -1,0 +1,63 @@
+@use "../abstracts/" as *;
+.game {
+  min-width: rem(514);
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  //   grid-template-rows: auto rem(140) rem(140) rem(140) auto;
+  gap: rem(20);
+  padding: rem(24);
+  @include respond(phone) {
+    min-width: rem(348);
+  }
+  &__header {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: rem(20);
+    :nth-child(3) {
+      align-self: end;
+      justify-self: end;
+    }
+    @include respond(phone) {
+      margin-bottom: rem(64);
+    }
+  }
+
+  &__icons {
+    display: flex;
+    align-self: center;
+    justify-self: start;
+    gap: rem(9);
+  }
+
+  &__turnText {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(13);
+
+    flex: 1;
+  }
+
+  &__status {
+    &--primary {
+      background-color: var(--clr-primary-2);
+    }
+    &--secondary {
+      background-color: var(--clr-secondary-2);
+    }
+    &--light {
+      background-color: var(--clr-light-2);
+    }
+  }
+}
+[class^="game__status--"],
+[class*=" game__status--"] {
+  border-radius: rem(15);
+  display: flex;
+  flex-direction: column;
+  padding: rem(13);
+  text-transform: uppercase;
+}

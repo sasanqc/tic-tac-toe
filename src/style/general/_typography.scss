@@ -1,0 +1,66 @@
+@use "../abstracts/" as *;
+[class^="heading--"],
+[class*=" heading--"] {
+  font-weight: 700;
+}
+
+.heading {
+  &--primary {
+    color: var(--clr-primary-2);
+  }
+  &--secondary {
+    color: var(--clr-secondary-2);
+  }
+  &--light {
+    color: var(--clr-light-1);
+  }
+  &--light-2 {
+    color: var(--clr-light-2);
+  }
+
+  &--l {
+    font-size: rem(40);
+    line-height: rem(50);
+    letter-spacing: rem(2.5);
+    @include respond(phone) {
+      font-size: rem(24);
+    }
+  }
+  &--m {
+    font-size: rem(24);
+    line-height: rem(30);
+    letter-spacing: rem(1.5);
+  }
+  &--s {
+    font-size: rem(20);
+    line-height: rem(25);
+    letter-spacing: rem(1.25);
+  }
+  &--xs {
+    font-size: rem(16);
+    line-height: rem(20);
+    letter-spacing: rem(1);
+  }
+}
+
+[calss^="body--"],
+[calss*=" body--"] {
+  font-size: rem(14);
+  line-height: rem(18);
+  letter-spacing: rem(0.875);
+  font-weight: 500;
+}
+.body {
+  &--primary {
+    color: var(--clr-primary-1);
+  }
+  &--secondary {
+    color: var(--clr-secondary-1);
+  }
+  &--light {
+    color: var(--clr-light-1);
+  }
+  &--light-2 {
+    color: var(--clr-light-2);
+  }
+}

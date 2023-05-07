@@ -1,0 +1,8 @@
+@use "sass:math";
+$fs-xl: 12;
+$fs-l: 10;
+$fs-m: 9;
+$fs-s: 8;
+@function rem($pixels, $context: $fs-l) {
+  @return (math.div($pixels, $context)) * 1rem;
+}

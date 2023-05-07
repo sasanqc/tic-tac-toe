@@ -1,0 +1,22 @@
+@use "../abstracts/" as *;
+.winner {
+  &__title {
+    margin-bottom: rem(16);
+    text-transform: uppercase;
+    color: var(--clr-light-2);
+  }
+  &__who {
+    color: var(--clr-primary-2);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(24);
+    margin-bottom: rem(24);
+  }
+  &__btns {
+    :first-child {
+      margin-right: rem(16);
+    }
+  }
+}
