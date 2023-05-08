@@ -17,4 +17,13 @@
   display: block;
   padding: rem(45);
   text-align: center;
+  animation: topToBottom 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.11);
+}
+@keyframes topToBottom {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 50%;
+  }
 }

@@ -37,3 +37,12 @@ export const checkWinner = (game) => {
   }
   return "";
 };
+export const findEmptyCell = (data) => {
+  const indices = data.reduce(
+    (out, bool, index) => (!bool ? out.concat(index) : out),
+    []
+  );
+  let rand = Math.random() * indices.length;
+  const randIndex = Math.floor(rand);
+  return indices[randIndex];
+};

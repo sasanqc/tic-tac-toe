@@ -39,7 +39,12 @@ const NewGame = ({ activePlayer, onChangePlayer, onStartNewGame }) => {
         <p className="body--light-2">REMEMBER : X GOES FIRST</p>
       </div>
       <div className="newGame__startBtns">
-        <button className="btn--secondary btn--l">NEW GAME (VS CPU)</button>
+        <button
+          className="btn--secondary btn--l"
+          onClick={() => onStartNewGame("cpu")}
+        >
+          NEW GAME (VS CPU)
+        </button>
         <button
           className="btn--primary btn--l"
           onClick={() => onStartNewGame("player")}

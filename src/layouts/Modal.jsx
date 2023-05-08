@@ -11,7 +11,12 @@ const Modal = ({ children, onBackdropClicked }) => {
         document.getElementById("backdrop-root")
       )}
       {createPortal(
-        <div className="overlay">{children}</div>,
+        <div
+          className="overlay"
+          onAnimationEnd={() => console.log("on animation end")}
+        >
+          {children}
+        </div>,
         document.getElementById("overlay-root")
       )}
     </Fragment>

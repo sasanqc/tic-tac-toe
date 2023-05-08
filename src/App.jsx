@@ -10,10 +10,12 @@ function App() {
   const handleChangePlayer = (p) => {
     setP1(p);
   };
+
   const handleStartNewGame = (via) => {
     setNewGame(false);
     setVia(via);
   };
+
   return (
     <main className="home">
       {newGame ? (
