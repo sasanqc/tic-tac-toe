@@ -31,7 +31,10 @@ export const useGame = (p1, via) => {
     const winner = checkWinner(temp);
 
     if (winner) {
-      setShowWinner(true);
+      setTimeout(() => {
+        setShowWinner(true);
+      }, 500);
+
       setWinner(winner);
 
       if (winner === "x") {
