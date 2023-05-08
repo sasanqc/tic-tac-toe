@@ -25,7 +25,7 @@ This is a solution to the [Tic Tac Toe challenge on Frontend Mentor](https://www
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Tic Tac Toe](https://sparkly-swan-214899.netlify.app/)
 
 ## My process
 
